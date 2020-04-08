@@ -1,0 +1,16 @@
+version: '3.7'
+
+
+services:
+  web:
+    container_name: spring-petclinic-angular
+    build: ./spring-petclinic-angular
+    ports:
+     - "4200:4200"
+
+    
+  springcommunity:
+    image: springcommunity/spring-petclinic-rest
+    ports:
+     - "9966:9966"
+  
